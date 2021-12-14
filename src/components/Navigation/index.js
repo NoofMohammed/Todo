@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <div>
       <a href="/home">home</a>
-      <a href="/sign-up">Sign-up</a>
+      <a href="/signUp">Sign-up</a>
       <a href="/login">Login</a>
     </div>
   );
