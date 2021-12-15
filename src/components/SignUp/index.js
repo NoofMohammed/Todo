@@ -15,7 +15,7 @@ const SignUp = () => {
   return (
     <div>
       <form>
-        <div className="mb-3" controlId="formBasicName">
+        <div className="mb-3" controlid="formBasicName">
           <label>Name</label>
           <input
             type="text"
@@ -25,7 +25,7 @@ const SignUp = () => {
             }}
           />
         </div>
-        <div className="mb-3" controlId="formBasicAge">
+        <div className="mb-3" controlid="formBasicAge">
           <label>Age</label>
           <input
             type="number"
@@ -35,7 +35,7 @@ const SignUp = () => {
             }}
           />
         </div>
-        <div className="mb-3" controlId="formBasicEmail">
+        <div className="mb-3" controlid="formBasicEmail">
           <label>Email address</label>
           <input
             type="email"
@@ -45,7 +45,7 @@ const SignUp = () => {
             }}
           />
         </div>
-        <div className="mb-3" controlId="formBasicPassword">
+        <div className="mb-3" controlid="formBasicPassword">
           <label>Password</label>
           <input
             type="password"
@@ -55,7 +55,7 @@ const SignUp = () => {
             }}
           />
         </div>
-        <div className="mb-3" controlId="formBasicPassword">
+        <div className="mb-3" controlid="formBasicPassword">
           <label>Password confirmation</label>
           <input
             type="password"
