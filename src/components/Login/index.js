@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 import "./login.css";
 const Login = () => {
+  const navigate = useNavigate();
+
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [loginError, setLoginError] = useState("");
@@ -21,8 +26,10 @@ const Login = () => {
       setLoginError("Email is-invalid");
     } else {
       setLoginError("You are logged in successfully");
+      navigate("/home");
     }
   };
+
   return (
     <>
       <div>
@@ -47,11 +54,11 @@ const Login = () => {
               }}
             />
           </div>
-          <button variant="primary" type="submit" onClick={checkUser}>
+          <Button variant="primary" onClick={checkUser}>
             Submit
-          </button>
-          <div>{loginError}</div>
+          </Button>
         </form>
+        <div>{loginError}</div>
       </div>
     </>
   );
